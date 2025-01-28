@@ -1,14 +1,14 @@
-
-import { Button } from "./components/ui/button"
-import { Progress } from "./components/ui/progress"
+import { ButtonTheme } from "./components/ui/button-theme"
 
 
 const App = () => {
   return (
-    <div className="p-5 space-y-2 bg-gray-100">
-      <Button>Click me</Button>
-      <Progress value={33} />
-    </div>
+    <>
+      <div className="flex flex-row gap-3 justify-content-center">
+        <h1>Heloo</h1>
+        <ButtonTheme />
+      </div>
+    </>
   )
 }
 
