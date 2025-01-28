@@ -1,14 +1,18 @@
-import { ButtonTheme } from "./components/ui/button-theme"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import Home from "./pages/Home";
 
 
 const App = () => {
   return (
-    <>
-      <div className="flex flex-row gap-3 justify-content-center">
-        <h1>Heloo</h1>
-        <ButtonTheme />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
